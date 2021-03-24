@@ -2,37 +2,38 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Salesperson: TROLOLOLOL</title>
+    <title>Staff: New Salesperson</title>
     <meta charset="utf-8">
-    <meta name="description" content="Salesperson: TROLOLOLOL">
+    <meta name="description" content="Staff: New Salesperson">
     <link rel="stylesheet" media="all" href="/red/public/styles.css">
   </head>
   <body>
-
 <div id="menu">
   <ul>
-    <li><a href="/red/public/index.php">Home</a></li>
-    <li><a href="/red/public/about.php">About Globitek</a></li>
-    <li><a href="/red/public/territories.php">Find a Salesperson</a></li>
-    <li><a href="/red/public/contact.php">Contact</a></li>
-    <li><a href="/red/public/staff/index.php">Login</a></li>
+    <li><a href="/red/public/index.php">Public Site</a></li>
+    <li><a href="/red/public/staff/index.php">Staff Menu</a></li>
+    <li><a href="/red/public/staff/logout.php" style="color: red;">Log out</a></li>
   </ul>
 </div>
+
 <div id="main-content">
+  <a href="index.php">Back to Salespeople List</a><br />
 
-  <div class="salesperson>">
-    <h1>Salesperson</h1>
+  <h1>New Salesperson</h1>
 
-    <div class="details">
-      TROLOLOLOL Hinckley<br />555-437-1355<br /> TROLOLOLOL@salesperson.com<br />    </div>
+  
+  <form action="new.php" method="post">
+    <input type="hidden" name="csrf_token" value="2a67c4652b7e7e30671637f01dd399af" />    First name:<br />
+    <input type="text" name="first_name" value="trolololol" /><br />
+    Last name:<br />
+    <input type="text" name="last_name" value="lol" /><br />
+    Phone:<br />
+    <input type="text" name="phone" value="555-5555" /><br />
+    Email:<br />
+    <input type="text" name="email" value="lol@lol.com" /><br />
     <br />
-
-    <div id="territories">
-      <h2>Territories</h2>
-
-      <ul id="territories"><li>Connecticut</li><li>Delaware</li><li>Maine</li><li>Maryland</li><li>New Hampshire</li><li>New York City</li><li>Northern New Jersey</li><li>Outside New York City</li><li>Quebec</li><li>Rhode Island</li><li>Vermont</li></ul>    </div>
-
-  </div>
+    <input type="submit" name="submit" value="Create"  />
+  </form>
 
 </div>
 
