@@ -1,13 +1,42 @@
-<html>
+
+<!doctype html>
+<html lang="en">
   <head>
-    <title>Bank Website</title>
+    <title>Staff: New Salesperson</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Staff: New Salesperson">
+    <link rel="stylesheet" media="all" href="/red/public/styles.css">
   </head>
   <body>
-    <form action="new.php" method="POST" name="pwned">
-      <input type="text" name="first_name" value="TROLOLOLOLOL" />
-      <input type="text" name="last_name" value="am I doing this right?" />
-      <input type="text" name="phone" value="55555-55555" />
-      <input type="text" name="email" value="lol@lol.com" />
-      <input type="submit" name="submit" value="Create" /> 
+<div id="menu">
+  <ul>
+    <li><a href="/red/public/index.php">Public Site</a></li>
+    <li><a href="/red/public/staff/index.php">Staff Menu</a></li>
+    <li><a href="/red/public/staff/logout.php" style="color: red;">Log out</a></li>
+  </ul>
+</div>
+
+<div id="main-content">
+  <a href="index.php">Back to Salespeople List</a><br />
+
+  <h1>New Salesperson</h1>
+
+  
+  <form action="new.php" method="post">
+    <input type="hidden" name="csrf_token" value="2a67c4652b7e7e30671637f01dd399af" />    First name:<br />
+    <input type="text" name="first_name" value="TROLOLOLOLOL" /><br />
+    Last name:<br />
+    <input type="text" name="last_name" value="am I doing this right?" /><br />
+    Phone:<br />
+    <input type="text" name="phone" value="55555-55555" /><br />
+    Email:<br />
+    <input type="text" name="email" value="lol@lol.com" /><br />
+    <br />
+    <input type="submit" name="submit" value="Create"  />
+  </form>
+
+</div>
+
   </body>
 </html>
+
